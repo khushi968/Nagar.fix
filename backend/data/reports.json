@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1764131338670",
+    "name": "Khushi Dixit",
+    "location": "shoolini university",
+    "category": "",
+    "description": "road breakage",
+    "severity": "Medium",
+    "imageUrl": null,
+    "status": "Pending",
+    "createdAt": "2025-11-26T04:28:58.672Z"
+  },
+  {
+    "id": "1764132834365",
+    "name": "Khushi Dixit",
+    "location": "shoolini university",
+    "category": "Pothole",
+    "description": "[AI Enhanced] road breakage\n - This issue requires immediate attention due to public safety concerns.",
+    "severity": "Medium",
+    "imageUrl": null,
+    "status": "Pending",
+    "createdAt": "2025-11-26T04:53:54.365Z"
+  }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Nagar Fix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>Nagar Fix Admin</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Issue</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <h3>Total Reports</h3>
+                <p id="totalReports">0</p>
+            </div>
+            <div class="stat-card warning">
+                <h3>Pending</h3>
+                <p id="pendingReports">0</p>
+            </div>
+            <div class="stat-card success">
+                <h3>Resolved</h3>
+                <p id="resolvedReports">0</p>
+            </div>
+        </div>
+
+        <div class="reports-list">
+            <h2>Recent Complaints</h2>
+            <div class="table-responsive">
+                <table id="reportsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Category</th>
+                            <th>Severity</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Reports will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Auto Reply -->
+    <div id="replyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Generate Auto-Reply</h3>
+            <p id="modalReportDetails"></p>
+            <textarea id="generatedReply" rows="5" placeholder="AI generated reply will appear here..."></textarea>
+            <button id="sendReplyBtn" class="btn btn-primary">Send Reply</button>
+        </div>
+    </div>
+
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/ai.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
